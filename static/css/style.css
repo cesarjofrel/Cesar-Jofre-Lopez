@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Letras negras por defecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    /* Le puse una sombra un poco más notoria para que resalte sobre el fondo blanco */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ff8c00; /* Color naranja para el botón */
+    color: #000000; /* Letras negras en el botón */
+    font-weight: bold; /* Letra un poco más gruesa para que se lea mejor */
+    border: 1px solid #cc7000; /* Un borde sutil */
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #e67e00; /* Naranja un poco más oscuro al pasar el mouse */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000000; /* Letras negras al escribir */
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000000; /* Letras negras en los títulos de los campos */
+}
+
+.resultado {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    color: #000000; /* Letras negras en los resultados */
+}
