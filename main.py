@@ -16,7 +16,7 @@ def ejercicio1():
     estado = None
 
     if request.method == 'POST':
-        # Capturamos los datos que el usuario escribió en el HTML
+
         n1 = float(request.form['nota1'])
         n2 = float(request.form['nota2'])
         n3 = float(request.form['nota3'])
