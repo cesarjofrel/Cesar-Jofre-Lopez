@@ -3,13 +3,13 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-# Ruta del Menú Principal
+# Menu Principal
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
-# Ruta Ejercicio 1
+# Ejercicio 1
 @app.route('/ejercicio1', methods=['GET', 'POST'])
 def ejercicio1():
     promedio = None
@@ -25,7 +25,7 @@ def ejercicio1():
         # Calculamos el promedio
         promedio = (n1 + n2 + n3) / 3
 
-        # Verificamos las condiciones del documento (>= 40 y >= 75)
+        # Verificamos las condiciones
         if promedio >= 40 and asistencia >= 75:
             estado = "APROBADO"
         else:
@@ -34,7 +34,7 @@ def ejercicio1():
     return render_template('ejercicio1.html', promedio=promedio, estado=estado)
 
 
-# Ruta Ejercicio 2
+# Ejercicio 2
 @app.route('/ejercicio2', methods=['GET', 'POST'])
 def ejercicio2():
     nombre_largo = None
@@ -48,7 +48,6 @@ def ejercicio2():
             request.form['nombre3']
         ]
 
-        # max() busca el mayor. key=len significa que busque el de mayor longitud (caracteres)
         nombre_largo = max(nombres, key=len)
         cantidad = len(nombre_largo)
 

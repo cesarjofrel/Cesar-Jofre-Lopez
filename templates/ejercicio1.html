@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h2>Formulario de Notas</h2>
-        <!-- method="POST" es para enviar los datos de forma segura al archivo main.py -->
+
         <form method="POST">
             <label>Nota 1:</label>
             <input type="number" name="nota1" min="10" max="70" required>
@@ -25,7 +25,7 @@
             <button type="submit" class="btn">Enviar</button>
         </form>
 
-        <!-- Este bloque de Python solo se muestra si hay un resultado -->
+
         {% if promedio is not none %}
         <div class="resultado">
             <p><strong>Promedio:</strong> {{ promedio }}</p>
